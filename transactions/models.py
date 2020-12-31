@@ -64,7 +64,7 @@ class SaleBill(models.Model):
     phone = models.CharField(max_length=12)
     address = models.CharField(max_length=200)
     email = models.EmailField(max_length=254)"""
-    cpf = models.CharField(max_length=15)
+    cpf = models.CharField(max_length=11)
 
     def __str__(self):
 	    return "Bill no: " + str(self.billno)
